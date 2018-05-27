@@ -5,11 +5,11 @@ tags: shinobi camera raspberry pi
 date: 2018-05-26
 ---
 
-== Overview
+## Overview
 
 Run https://shinobi.video/ on Docker on a Raspberry Pi (tested on Raspberry Pi 3 B+)
 
-== Requirements
+## Requirements
 
 Install Docker as described here: https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
 
@@ -30,7 +30,7 @@ Checkout the repo
 git clone https://github.com/idlerun/docker-shinobi.git
 ```
 
-== Usage
+## Usage
 
 Create containers:
 
@@ -48,3 +48,15 @@ Password : admin
 ```
 
 More info here: https://shinobi.video/docs/start#content-docker
+
+## Swap
+
+raspbian has pretty limited swap by default, might be helpful to add osme more.
+
+```
+mkdir -v /var/cache/swap
+cd /var/cache/swap
+sudo dd if=/dev/zero of=swapfile bs=1K count=2M
+sudo mkswap swapfile
+sudo swapon swapfile
+```
