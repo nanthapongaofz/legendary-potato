@@ -6,6 +6,7 @@ services:
       - MySQL.env
     volumes:
       - ./datadir:/var/lib/mysql
+    restart: always
   web:
     build: .
     env_file:
@@ -20,3 +21,12 @@ services:
       - db
     ports:
       - "8080:8080"
+    restart: always
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: koenkk/zigbee2mqtt:arm32v6
+    volumes:
+      - ./zigbee/data:/app/data
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    restart: always

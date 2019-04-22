@@ -1,0 +1,6 @@
+4/9/2019, 7:34:14 PM - info: Logging to directory: '/app/data/log/2019-04-09.19-34-14'
+4/9/2019, 7:34:17 PM - info: Starting zigbee2mqtt version 1.2.1 (commit #e5ca977)
+4/9/2019, 7:34:17 PM - info: Starting zigbee-shepherd
+4/9/2019, 7:34:19 PM - info: Error while starting zigbee-shepherd, attempting to fix... (takes 60 seconds)
+4/9/2019, 7:35:19 PM - info: Starting zigbee-shepherd
+4/9/2019, 7:35:21 PM - error: Error while starting zigbee-shepherd!

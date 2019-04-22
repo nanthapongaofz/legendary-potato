@@ -1,0 +1,29 @@
+{
+    "0x00158d0002bf9867": {
+        "temperature": 30.44,
+        "linkquality": 5,
+        "humidity": 41.08,
+        "pressure": 986.8,
+        "battery": 100,
+        "voltage": 3015
+    },
+    "0x00158d0002e69070": {
+        "contact": true,
+        "linkquality": 57,
+        "battery": 100,
+        "voltage": 3025
+    },
+    "0x00158d0003665bda": {
+        "illuminance": 0,
+        "linkquality": 99,
+        "occupancy": false,
+        "battery": 100,
+        "voltage": 3045
+    },
+    "0x00158d0002ecf32e": {
+        "contact": true,
+        "linkquality": 107,
+        "battery": 100,
+        "voltage": 3065
+    }
+}

@@ -28,7 +28,7 @@ WORKDIR /opt/shinobi
 ADD ffmpeg.rpi /usr/bin/ffmpeg
 
 # Install package dependencies
-RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list \
+RUN echo "deb http://archive.debian.org/debian jessie-backports main" >> /etc/apt/sources.list \
     && apt-get update \
     && apt-get install -y python pkg-config libcairo-dev make g++ libjpeg-dev git mysql-client \
     && apt-get clean

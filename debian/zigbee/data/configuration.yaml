@@ -1,0 +1,20 @@
+homeassistant: false
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: 'http://mqtt.ppsmartbot.com'
+serial:
+  port: /dev/ttyACM0
+devices:
+  '0x00158d0002bf9867':
+    friendly_name: '0x00158d0002bf9867'
+    retain: false
+  '0x00158d0002e69070':
+    friendly_name: '0x00158d0002e69070'
+    retain: false
+  '0x00158d0003665bda':
+    friendly_name: '0x00158d0003665bda'
+    retain: false
+  '0x00158d0002ecf32e':
+    friendly_name: '0x00158d0002ecf32e'
+    retain: false
